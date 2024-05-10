@@ -314,4 +314,12 @@
 
 
 
+let nums : number[] = [1,2,3,4,5,6,7,8,9,10];
+
+function nums1(item: number){
+    return nums.includes(item)
+}
+
+console.log(nums1(3));
+
 

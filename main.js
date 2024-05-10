@@ -210,13 +210,18 @@
 // console.log(isExist<number>(45,quantity));
 // console.log(isExist<boolean>(false,bool));
 // console.log(isExist<string>("carrot", fruit));
-let names = ["asad", "Nadeem", "Iqbal"];
-function nameExist(item, list) {
-    return list.includes(item);
+// let names: string[] = ["asad", "Nadeem", "Iqbal"];
+// function nameExist(item: string, list: string[]){
+//     return list.includes(item);
+// }
+// console.log(nameExist("nadeem", names));
+// console.log(nameExist("Nadeem", names));
+// console.log(nameExist("Iqbal", names));
+// console.log(nameExist("asad", names));
+// console.log(nameExist("Asad",names));
+let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+function nums1(item) {
+    return nums.includes(item);
 }
-console.log(nameExist("nadeem", names));
-console.log(nameExist("Nadeem", names));
-console.log(nameExist("Iqbal", names));
-console.log(nameExist("asad", names));
-console.log(nameExist("Asad", names));
+console.log(nums1(3));
 export {};

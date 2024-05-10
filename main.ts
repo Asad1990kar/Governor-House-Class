@@ -314,12 +314,34 @@
 
 
 
-let nums : number[] = [1,2,3,4,5,6,7,8,9,10];
+// let nums : number[] = [1,2,3,4,5,6,7,8,9,10];
 
-function nums1(item: number){
-    return nums.includes(item)
-}
+// function nums1(item: number){
+//     return nums.includes(item)
+// }
 
-console.log(nums1(3));
+// console.log(nums1(3));
 
 
+
+let fav_fruits : string[] = ["mango", "banana", "strawberry"];
+
+if (fav_fruits.includes("banana")){
+    console.log("\nYou really like Bananas");
+};
+
+if (fav_fruits.includes("watermelon")){
+    console.log("\nYou really like Watermelon");
+};
+
+if (fav_fruits.includes("mango")){
+    console.log("\nYou really like Mango");
+};
+
+if (fav_fruits.includes("kiwi")){
+    console.log("\nYou really like Kiwi");
+};
+
+if (fav_fruits.includes("strawberry")){
+    console.log("\nYou really like Strawberry");
+};

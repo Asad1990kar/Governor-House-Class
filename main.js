@@ -200,14 +200,23 @@
 //  console.log(isNameExist("asd", names));
 //  console.log(isNameExist(3,nums));
 //  console.log(isNameExist(true,bool));
-let veg = ["Tomato", "carrot", "Onion", "Potato"];
-let fruit = ["Mango", "Banana", "Watermelon", "Kiwi"];
-let quantity = [11, 22, 33, 44, 55, 66, 77, 88];
-let bool = [true, false];
-function isExist(item, list) {
+// let veg : string[] = ["Tomato", "carrot", "Onion", "Potato"];
+// let fruit :string[] = ["Mango", "Banana", "Watermelon", "Kiwi"];
+// let quantity : number[] = [11, 22, 33, 44, 55, 66, 77, 88];
+// let bool : boolean[] = [true, false];
+// function isExist<w>(item: w, list: w[]){
+//     return list.includes(item);
+// }
+// console.log(isExist<number>(45,quantity));
+// console.log(isExist<boolean>(false,bool));
+// console.log(isExist<string>("carrot", fruit));
+let names = ["asad", "Nadeem", "Iqbal"];
+function nameExist(item, list) {
     return list.includes(item);
 }
-console.log(isExist(45, quantity));
-console.log(isExist(false, bool));
-console.log(isExist("carrot", fruit));
+console.log(nameExist("nadeem", names));
+console.log(nameExist("Nadeem", names));
+console.log(nameExist("Iqbal", names));
+console.log(nameExist("asad", names));
+console.log(nameExist("Asad", names));
 export {};

@@ -224,25 +224,154 @@
 //     return nums.includes(item)
 // }
 // console.log(nums1(3));
-let fav_fruits = ["mango", "banana", "strawberry"];
-if (fav_fruits.includes("banana")) {
-    console.log("\nYou really like Bananas");
-}
-;
-if (fav_fruits.includes("watermelon")) {
-    console.log("\nYou really like Watermelon");
-}
-;
-if (fav_fruits.includes("mango")) {
-    console.log("\nYou really like Mango");
-}
-;
-if (fav_fruits.includes("kiwi")) {
-    console.log("\nYou really like Kiwi");
-}
-;
-if (fav_fruits.includes("strawberry")) {
-    console.log("\nYou really like Strawberry");
-}
-;
+// let fav_fruits : string[] = ["mango", "banana", "strawberry"];
+// if (fav_fruits.includes("banana")){
+//     console.log("\nYou really like Bananas");
+// };
+// if (fav_fruits.includes("watermelon")){
+//     console.log("\nYou really like Watermelon");
+// };
+// if (fav_fruits.includes("mango")){
+//     console.log("\nYou really like Mango");
+// };
+// if (fav_fruits.includes("kiwi")){
+//     console.log("\nYou really like Kiwi");
+// };
+// if (fav_fruits.includes("strawberry")){
+//     console.log("\nYou really like Strawberry");
+// };
+// Class 14-5-2024----
+// var a= 10;
+// function getvalue() {
+//     var a= 100;
+//     if (true){
+//         var a = 200;
+//         console.log(a);
+//     }
+// };
+// getvalue();
+// const confirm = 10;
+// console.log(confirm);
+// const confirm = 100
+// let petdog = {
+//     name: "dog",
+//     color: "brown",
+//     legsCount: 4,
+//     tail: true
+// };
+// let petcat = {
+//     name: "cat",
+//     color: "white",
+//     legsCount: 4,
+//     tail: true
+// };
+// interface pets{
+//     name: string,
+//     color: string,
+//     legsCount: number,
+//     tail: boolean
+// };
+// function petFactory(name: string, color: string, legsCount: number, tail:boolean): pets{
+//     return {
+//         name: name,
+//         color: color,
+//         legsCount: legsCount,
+//         tail: tail,
+//     }
+// };
+// const petCat = petFactory("cat", "white", 4, true);
+// const petDog = petFactory("dog", "black", 4, false);
+// console.log(petCat, petDog);
+// interface family{
+//     name: string,
+//     surname: string,
+//     number: number,
+//     member: boolean,
+// };
+// function familyTree(name: string, surname: string, number: number, member: boolean): family {
+//     return {
+//         name,
+//         surname,
+//         number,
+//         member
+//     }
+// };
+// const asad = familyTree("asad", "Nadeem", .0304, true);
+// const shahid = familyTree("shahid", "anwar", .0303, false);
+// console.log (shahid , asad);
+// LOOP DEFINATION:::
+// for(initialization; condition; updation){
+//     console.log("statement");
+// }
+// for (let i=1; i <= 10; i++){
+//     console.log("statement", i);
+// };
+// let studets:string[] = ["asad", "kashif", "muniza", "annie"];
+// console.log(studets.forEach(list => console.log(list)));
+// for(let i = 0; i < studets.length; i++) {
+//     console.log(studets[i]);
+// };
+// Map method
+// map()
+// let num:number[] = [1,2,3,4,5,6,7,8];
+// let box = num.map(function (value,index){
+//     return value * 2
+// });
+// console.log(box);
+// let fruitNames :string[] = ["Apple", "Banana", "Melon", "strawberry", "kiwi"];
+// let fruit = fruitNames.map(function (value, index){
+//     return value + index
+// })
+// console.log(fruit);
+// let ageOfUser: number | string | boolean = 8;
+// console.log("08");
+// if (ageOfUser < 10) {
+//     ageOfUser = `0${ageOfUser}`;
+// }
+// console.log(ageOfUser);
+// let randomNum = Math.floor(Math.random() * 10  + 1 )
+// console.log(randomNum)
+// let normalVar : number | string = randomNum > 5 ? "Asad" : 3
+// // console.log(typeof normalVar) // string
+// // normalVar = 10;
+// // console.log(typeof normalVar) // number
+// if(typeof normalVar == "string"){
+//     console.log(normalVar);
+//     console.log(normalVar.toUpperCase())
+// } else if(normalVar < 5) {
+//         console.log(`0${normalVar}`)
+// }
+// console.log(normalVar.toUpperCase());
+// import inquirer from "inquirer";
+// import chalk from "chalk";
+// let answers = await inquirer.prompt([{
+//     name: "age",
+//     type: "number",
+//     message: "Enter your Age:"}
+// ]);
+// console.log(chalk.redBright("Insha Allah, in " + chalk.bgYellow.blue((60 - answers.age)) + " years you will be 60 years old."));
+// enum asad{
+//     name = "asad",
+//     surName = "Nadeem"
+// }
+// let myName : asad =asad.name
+// let mySurName : asad = asad.surName
+// console.log(myName, mySurName)
+// const enum LogLevel {
+//     ERROR,
+//     WARN,
+//     INFO,
+//     DEBUG
+// }
+//  const enum trafficSignal {
+//     RED = "RED",
+//     GREEN = "GREEN",
+//     YELLOW = "YELLOW"
+//  }
+//  type  trafficSignalType = keyof typeof trafficSignal;
+let ourTuple;
+ourTuple = ["asad", false, 45];
+console.log(ourTuple);
+ourTuple.push("nadeem");
+console.log(ourTuple);
 export {};
